@@ -2,7 +2,7 @@
 include_once 'lib/session.php';
 Session::checkSession('client');
 include_once 'classes/cart.php';
-
+//Xử lý hàm xóa sp trong cart
 if (isset($_GET['id'])) {
     $cart = new cart();
     $result = $cart->delete($_GET['id']);

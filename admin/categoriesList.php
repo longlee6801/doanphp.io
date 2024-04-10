@@ -56,7 +56,7 @@ $pageCount = $categories->getCountPaging();
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">ADMIN</label>
+        <label class="logo">ADMINLEE</label>
         <ul>
             <li><a href="productlist.php" >Quản lý Sản phẩm</a></li>
             <li><a href="categoriesList.php" class="active">Quản lý danh mục</a></li>
@@ -67,7 +67,14 @@ $pageCount = $categories->getCountPaging();
         <h1>Danh sách danh mục</h1>
     </div>
     <div class="addNew">
-        <a href="add_category.php">Thêm mới</a>
+        <a href="add_category.php" style="display: inline-block; 
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">Thêm mới</a>
     </div>
     <div class="container">
         <?php $count = 1;
@@ -126,7 +133,7 @@ $pageCount = $categories->getCountPaging();
     </div>
     
     <footer>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 

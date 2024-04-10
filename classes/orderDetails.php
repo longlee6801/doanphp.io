@@ -5,7 +5,6 @@ include_once($filepath . '/../lib/session.php');
 include_once($filepath . '/../classes/cart.php');
 ?>
 
-
  
 <?php
 /**

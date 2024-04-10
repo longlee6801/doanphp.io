@@ -8,7 +8,7 @@ if ($role_id == 1) {
     header("Location:../index.php");
 }
 include_once '../classes/order.php';
-
+//Xử lý khi đơn hàng đang chờ
 if (isset($_GET['orderId'])) {
     $order = new order();
     $result = $order->deliveringOrder($_GET['orderId']);

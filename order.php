@@ -28,7 +28,7 @@ $result = $order->getOrderByUser();
 
 <body>
     <nav>
-        <label class="logo">STORENOW</label>
+        <label class="logo">MelodyMart</label>
         <ul>
             <li><a href="index.php">Trang chủ</a></li>
             <li><a href="productList.php">Sản phẩm</a></li>
@@ -72,10 +72,12 @@ $result = $order->getOrderByUser();
                         <td><?= $value['id'] ?></td>
                         <td><?= $value['createdDate'] ?></td>
                         <td><?= ($value['status'] != "Processing") ? $value['receivedDate'] : "Dự kiến 3 ngày sau khi đơn hàng đã được xử lý" ?> <?=  ($value['status'] != "Complete" && $value['status'] != "Processing") ? "(Dự kiến)" : "" ?> </td>
+                        
                         <?php
                         if ($value['status'] == 'Delivering') { ?>
                             <td>
-                                <a href="complete_order.php?orderId=<?= $value['id'] ?>">Đang giao (Click vào để xác nhận đã nhận)</a>
+                                <from href="complete_order.php?orderId=<?= $value['id'] ?>">Đang giao (Click vào để xác nhận đã nhận)</from>
+                                
                             </td>
                             <td>
                                 <a href="orderdetail.php?orderId=<?= $value['id'] ?>">Chi tiết</a>
@@ -89,6 +91,7 @@ $result = $order->getOrderByUser();
                             </td>
                         <?php }
                         ?>
+                        
                     </tr>
                 <?php } ?>
             </table>
@@ -101,9 +104,9 @@ $result = $order->getOrderByUser();
     </div>
     <footer>
         <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/Longlee.me/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%A1-%C4%91%E1%BB%A9c-long-486b43301/" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/longthichhat/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
         <ul class="list">
             <li>
@@ -113,7 +116,7 @@ $result = $order->getOrderByUser();
                 <a href="productList.php">Sản Phẩm</a>
             </li>
         </ul>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 

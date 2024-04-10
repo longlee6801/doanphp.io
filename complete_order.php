@@ -2,7 +2,7 @@
 include_once 'lib/session.php';
 Session::checkSession('client');
 include_once 'classes/order.php';
-
+//Xử lý hàm order
 if (isset($_GET['orderId'])) {
     $order = new order();
     $result = $order->completeOrder($_GET['orderId']);

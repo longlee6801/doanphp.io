@@ -26,10 +26,11 @@ $list = mysqli_fetch_all($product->getFeaturedProducts(), MYSQLI_ASSOC);
 
 <body>
     <nav>
-        <label class="logo">STORENOW</label>
+        <label class="logo" >MelodyMart</label>
         <ul>
             <li><a href="index.php" class="active">Trang chủ</a></li>
             <li><a href="productList.php">Sản phẩm</a></li>
+            <li><a href="add_product.php">Thêm sản phẩm</a></li>
             <?php
             if (isset($_SESSION['user']) && $_SESSION['user']) { ?>
                 <li><a href="logout.php" id="signin">Đăng xuất</a></li>
@@ -90,7 +91,7 @@ $list = mysqli_fetch_all($product->getFeaturedProducts(), MYSQLI_ASSOC);
                     </div> -->
                     <div class="action">
                         <a class="add-cart" href="add_cart.php?id=<?= $value['id'] ?>">Thêm vào giỏ</a>
-                        <a class="detail" href="detail.php?id=<?= $value['id'] ?>">Xem chi tiết</a>
+                        <a class="detail" href="detail.php?id=<?= $value['id'] ?>">Chi tiết</a>
                     </div>
                 </div>
             </div>
@@ -99,9 +100,9 @@ $list = mysqli_fetch_all($product->getFeaturedProducts(), MYSQLI_ASSOC);
     </div>
     <footer>
         <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Longlee.me/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%A1-%C4%91%E1%BB%A9c-long-486b43301/" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/longthichhat/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
         <ul class="list">
             <li>
@@ -111,7 +112,7 @@ $list = mysqli_fetch_all($product->getFeaturedProducts(), MYSQLI_ASSOC);
                 <a href="productList.php">Sản Phẩm</a>
             </li>
         </ul>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 

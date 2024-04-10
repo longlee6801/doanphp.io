@@ -31,7 +31,7 @@ class user
 			Session::set('role_id', $value['role_id']);
 			header("Location:index.php");
 		} else {
-			$alert = "Tên đăng nhập hoặc mật khẩu không đúng!";
+			$alert = "Tên đăng nhập hoặc mật khẩu không đúng!!";
 			return $alert;
 		}
 	}

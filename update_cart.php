@@ -9,6 +9,7 @@ $result = $cart->update($_POST['productId'], $_POST['qty']);
 $totalPrice = $cart->getTotalPriceByUserId();
 $totalQty = $cart->getTotalQtyByUserId();
 $data = [$totalPrice, $totalQty];
+// $data = [$totalPrice, $totalQty];
 header('Content-Type: application/json; charset=utf-8');
 
 if ($result === 'out of stock') {

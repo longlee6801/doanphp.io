@@ -36,7 +36,7 @@ $order_result = $order->getById($result[0]['orderId']);
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">ADMIN</label>
+        <label class="logo">ADMINLEE</label>
         <ul>
             <li><a href="productlist.php">Quản lý Sản phẩm</a></li>
             <li><a href="categoriesList.php">Quản lý Danh mục</a></li>
@@ -83,7 +83,7 @@ $order_result = $order->getById($result[0]['orderId']);
     </div>
     
     <footer>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 

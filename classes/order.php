@@ -40,6 +40,7 @@ class order
             $orderId = mysqli_fetch_row($get_cart_last_id)[0];
         }
 
+        
         //Update product qty
         $product = new product();
         foreach ($cart_user as $key => $value) {

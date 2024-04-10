@@ -2,7 +2,7 @@
 include_once 'lib/session.php';
 Session::checkSession('client');
 include_once 'classes/cart.php';
-
+//Xử lý hàm thêm sp vào cart
 if (isset($_GET['id'])) {
     $cart = new cart();
     $result = $cart->add($_GET['id']);

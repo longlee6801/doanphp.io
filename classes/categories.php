@@ -28,6 +28,7 @@ class categories
             return $alert;
         }
     }
+    
 
     public function getAllAdmin($page = 1, $total = 8)
     {

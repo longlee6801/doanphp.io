@@ -46,6 +46,7 @@ class product
         }
     }
 
+    
     public function getAllAdmin($page = 1, $total = 8)
     {
         if ($page <= 0) {

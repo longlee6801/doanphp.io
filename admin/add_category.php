@@ -34,7 +34,7 @@ if ($role_id == 1) {
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">ADMIN</label>
+        <label class="logo">ADMINLEE</label>
         <ul>
             <li><a href="productlist.php" >Quản lý Sản phẩm</a></li>
             <li><a href="categoriesList.php" class="active" >Quản lý danh mục</a></li>
@@ -57,7 +57,7 @@ if ($role_id == 1) {
     </div>
     </div>
     <footer>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 

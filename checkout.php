@@ -29,7 +29,7 @@ $userInfo = $user->get();
 
 <body>
     <nav>
-        <label class="logo" id="logo">STORENOW</label>
+        <label class="logo" id="logo">MelodyMart</label>
         <ul>
             <li><a href="index.php">Trang chủ</a></li>
             <li><a href="productList.php">Sản phẩm</a></li>
@@ -94,6 +94,9 @@ $userInfo = $user->get();
                     <div>
                         Số lượng: <b id="qtycart"><?= $totalQty['total'] ?></b>
                     </div>
+                    <input>
+                        SDT: 
+                    </input>
                     <div>
                         Tổng tiền: <b id="totalcart"><?= number_format($totalPrice['total'], 0, '', ',') ?>VND</b>
                     </div>
@@ -101,7 +104,7 @@ $userInfo = $user->get();
                         Địa chỉ nhận hàng: <b><?= $userInfo['address'] ?></b>
                     </div>
                     <div class="buy-btn">
-                        <a href="add_order.php">Tiến hành đặt hàng</a>
+                        <a href="order_form.php">Tiến hành đặt hàng</a>
                     </div>
                 </div>
             </div>
@@ -113,9 +116,9 @@ $userInfo = $user->get();
     </div>
     <footer>
         <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/Longlee.me/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/l%C3%AA-b%C3%A1-%C4%91%E1%BB%A9c-long-486b43301/" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/longthichhat/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
         <ul class="list">
             <li>
@@ -125,7 +128,7 @@ $userInfo = $user->get();
                 <a href="productList.php">Sản Phẩm</a>
             </li>
         </ul>
-        <p class="copyright">STORENOW @ 2021</p>
+        <p class="copyright">Longlee @ 04/2024</p>
     </footer>
 </body>
 <script type="text/javascript">
